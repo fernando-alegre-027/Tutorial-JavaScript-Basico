@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+<div>
+    <h1>016 Strings Search</h1>
+    <h2>Métodos de búsqueda de JavaScript</h2>
+    <ul>
+        <li>String <b>indexOf()</b></li>
+        <li>String <b>lastIndexOf()</b></li>
+        <li>String <b>startsWith()</b></li>
+        <li>String <b>endsWith()</b></li>
+    </ul>
+
+    <h2>JavaScript String  <b>indexOf()</b></h2>
+    <p>El método <b>indexOf()</b> devuelve el índice (la posición) de la 
+        primera aparición de un texto específico en una cadena:</p>
+    <img src="img/001strs.png" alt=""><br><img src="img/002strs.png" alt="">
+    <div class="resaltar">
+    <p>JavaScript cuenta posiciones desde cero.</p>
+    <p>0 es la primera posición en una cadena, 1 es la segunda, 2 es la 
+        tercera, ...</p>
+    </div>
+
+    <h2>Cadena JavaScript <b>lastIndexOf()</b> </h2>
+    <p>El método <b>lastIndexOf()</b> devuelve el índice de la última aparición de 
+        un texto específico en una cadena:</p>
+    <img src="img/004strs.png" alt="code">
+    <p>Ambos <b>indexOf()</b> y <b>lastIndexOf()</b> devuelven -1 si no se encuentra 
+        el texto:</p>
+    <img src="img/005strs.png" alt="code"> <br>
+    <img src="img/006strs.png" alt="">
+    <p>Ambos métodos aceptan un <b>segundo parámetro</b> como posición inicial de la búsqueda:</p>
+    <img src="img/007strs.png" alt="code"> <br>
+    <img src="img/008strs.png" alt="code">
+    <p>Los métodos <b>lastIndexOf()</b> buscan hacia atrás (desde el final hasta 
+        el principio), lo que significa: si el segundo parámetro es 15, la búsqueda 
+        comienza en la posición 15 y busca hasta el principio de la cadena.</p>
+    <img src="img/009strs.png" alt="code"> <br>
+    <img src="img/010strs.png" alt="code">
+
+    <h2>JavaScript String <b>search()</b></h2>
+    <p>El método <b>search()</b> busca una cadena para un valor específico y devuelve 
+        la posición de la coincidencia:</p>
+    <img src="img/011strs.png" alt="code"> <br>
+    <img src="img/012strs.png" alt="code">
+
+    <h2>¿Te diste cuenta?</h2>
+    <p>¿ Los dos métodos, <b>indexOf()</b> y <b>search()</b>, son iguales?</p>
+    <p>¿Aceptan los mismos argumentos (parámetros) y devuelven el mismo valor?</p>
+    <p>Los dos métodos <b>NO</b> son iguales. Estas son las diferencias:</p>
+    <ul>
+        <li>El método <b>search() NO</b>  puede aceptar un segundo argumento de 
+            posición inicial.</li>
+        <li>El método <b>indexOf() NO</b>  puede tomar valores de búsqueda 
+            poderosos (expresiones regulares).</li>
+    </ul>
+    <p></p>
+
+    <h2>JavaScript String <b>match() </b>(coincidencia)</h2>
+    <p>El método <b> match()</b> busca en una cadena una coincidencia con una expresión 
+        regular y devuelve las coincidencias, como un <b>objeto Array</b>.</p>
+    <p> <b>Ejemplo1>></b> Busque una cadena para "ain":</p>
+    <img src="img/013strs.png" alt="code"> <br>
+    <img src="img/014strs.png" alt="code">
+    <div class="resaltar">
+        <p>Más <b>expresiones regulares</b> en:</p>
+        <a href="https://www.w3schools.com/js/js_regexp.asp">Expresiones regulares de JavaScript</a>    
+        <p>Si una <b>expresión regular</b> no incluye el modificador <b>g</b> (para realizar una búsqueda global ), 
+            el método <b>match()</b> devolverá solo la <b>primera</b> coincidencia en la cadena.</p>    
+        <p>Una <b>expresión regular</b> es una secuencia de caracteres que forma un patrón de búsqueda.</p>
+        <p>El patrón de búsqueda se puede utilizar para operaciones de búsqueda y reemplazo de texto.</p>
+    </div>   
+    <h3>Sintaxis</h2>
+    <img src="img/015strs.png" alt="code">
+    <ul>
+        <li> <b>regexp</b>: Requerido. Valor a buscar, como una expresión regular.</li>
+        <li> <b>returns</b> : Una matriz que contiene las coincidencias, un elemento para cada coincidencia o 
+            nulo si no se encuentra ninguna coincidencia</li>
+    </ul>
+    <p><b>Ejemplo 2 >></b>  Realice una búsqueda global que no distinga entre mayúsculas y minúsculas para "ain":</p>
+    <img src="img/016strs.png" alt="code"> <br>
+    <img src="img/017strs.png" alt="code">
+
+    <h2>La cadena de JavaScript <b>includes()</b></h2>
+    <p>El método <b>includes()</b> devuelve <b>true</b> si una cadena contiene un valor especificado.</p>
+    <img src="img/018strs.png" alt="code"> <br>
+    <img src="img/019strs.png" alt="code">
+    <h3>Sintaxis</h3>
+    <img src="img/020strs.png" alt="code">
+    <ul>
+        <li> <b>searchvalue</b>: Requerido. La cadena a buscar</li>
+        <li><b>start</b>: Opcional. Predeterminado 0. Posición para iniciar la búsqueda</li>
+        <li><b>returns</b>: Devuelve <b>true</b> si la cadena contiene el valor; de lo contrario, 
+            devuelve <b>false</b></li>
+    </ul>
+    <p><b>Ejemplo</b>>> :Compruebe si una cadena incluye "world", comenzando la búsqueda en la posición 12:</p>
+    <img src="img/021strs.png" alt="code"> <br>
+    <img src="img/022strs.png" alt="code">
+
+    <h2>La cadena de JavaScript <b>startsWith()</b> (comienzaCon)</h2>
+    <p>El método <b>startsWith()</b> devuelve <b>true</b> si una cadena comienza con un valor específico, 
+        de lo contrario devuelve <b>false</b>:</p>
+    <img src="img/023strs.png" alt="code"> <br>
+    <img src="img/024strs.png" alt="code"> 
+    <h3>Sintaxis</h3>
+    <img src="img/025strs.png" alt="code"> 
+    <h3>Valores de Paramétros</h3>
+    <table>
+        <tr>
+            <th>Parámetro</th>
+            <th>Descripción</th>
+            <tr>
+                <td><b>searchvalue</b></td>
+                <td>Requerido: El valor a buscar.</td>
+            </tr>
+            <tr>
+                <td><b>start</b></td>
+                <td>Opcional: Predeterminado 0. La posición para iniciar la búsqueda.</td>
+            </tr>
+        </tr>
+    </table>
+    <p>Ejemplos:</p>
+    <img src="img/026strs.png" alt="code"> <br>
+    <img src="img/027strs.png" alt="code">
+    <div class="resaltar">
+        <p>Nota: El método <b>startsWith()</b> distingue entre mayúsculas y minúsculas.</p>
+    </div>
+
+    <h2>La cadena de JavaScript <b>endsWith()</b> (terminaCon )</h2>
+    <p>El método <b>endsWith()</b> devuelve <b> true</b> si una cadena termina con un valor específico, 
+        de lo contrario devuelve <b>false</b>:</p>
+    <p><b>Ejemplo: >></b>Compruebe si una cadena termina con "Doe":</p>
+    <img src="img/028strs.png" alt="code"> <br>
+    <img src="img/029strs.png" alt="code">
+    <h3>Sintaxis</h3>
+    <img src="img/030strs.png" alt="code">
+    <h3>Valores de Paramétros</h3>
+    <table>
+        <tr>
+            <th>Parámetro</th>
+            <th>Descripción</th>
+            <tr>
+                <td><b>searchvalue</b></td>
+                <td>Requerido: El valor a buscar.</td>
+            </tr>
+            <tr>
+                <td><b>length</b></td>
+                <td>Opcional: La longitud a buscar.</td>
+            </tr>
+        </tr>
+    </table>
+    <p><b>Ejemplo: >></b> Compruebe si los 11 primeros caracteres de 
+        una cadena terminan con "world":</p>
+    <img src="img/033strs.png" alt="code"> <br>
+    <img src="img/032strs.png" alt="code">
+    <div class="resaltar">El método <b>endsWith()</b> distingue entre mayúsculas y minúsculas.
+    <p>Para obtener una referencia completa de String, vaya a :</p>
+    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">Referencia completa de 
+        cadenas de JavaScript .</a>
+        <p>La referencia contiene descripciones y ejemplos de todas las propiedades y métodos de cadenas.</p>
+    </div>
+
+
+</body>
+</html>

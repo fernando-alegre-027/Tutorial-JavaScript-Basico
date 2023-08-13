@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+    <h1>015 String Methods</h1>
+
+    <h2>Métodos y propiedades de cadenas</h2>
+    <p>Los valores primitivos, como "John Doe", no pueden tener propiedades ni métodos (porque no son objetos).</p>
+    <p>Pero con JavaScript, los métodos y propiedades también están disponibles para valores primitivos, porque 
+        JavaScript trata los valores primitivos como objetos cuando ejecuta métodos y propiedades.</p>
+    <h2>Longitud de cadena de JavaScript</h2>
+    <p>La propiedad <b>length</b> devuelve la longitud de una cadena:</p>
+    <img src="img/001strm.png" alt="">
+
+    <h2>Extracción de partes de cuerdas</h2>
+    <p>Hay 3 métodos para extraer una parte de una cadena:</p>
+    <ul>
+        <li><b>slice(start, end)</b></li>
+        <li><b>substring(start, end)</b></li>
+        <li><b>substr(start, length)</b></li>
+    </ul>
+
+    <h2>Segmento de cadena de JavaScript ()</h2>
+    <p><b>slice()</b> extrae una parte de una cadena y devuelve la parte extraída en una nueva cadena.</p>
+    <p>El método toma 2 parámetros: la posición inicial y la posición final (final no incluida).</p>
+    <p><b>Ejemplo>></b> Corta una porción de una cuerda desde la posición 7 a la posición 13 (13 no incluidas):</p>
+    <img src="img/002strm.png" alt="">
+    <div class="resaltar">
+        <h5>Nota</h5>
+        <p>JavaScript cuenta posiciones desde cero.</p>
+        <p>La primera posición es 0.</p>
+        <p>La segunda posición es 1.</p>
+        <p>Si un parámetro es negativo, la posición se cuenta desde el final de la cadena.</p>   
+    </div>
+    <p>Este ejemplo corta una porción de una cadena desde la posición -12 a la posición -6:</p>
+    <img src="img/003strm.png" alt="">
+    <p>Si omite el segundo parámetro, el método eliminará el resto de la cadena:</p>
+    <img src="img/004strm.png" alt="">
+    <p>o, contando desde el final:</p>
+    <img src="img/007strm.png" alt="">
+
+    <h2><b>Subcadena</b> de cadena de JavaScript ()</h2>
+    <p><b>substring()</b> es similar a <b>slice()</b>.</p>
+    <p>La diferencia es que los valores iniciales y finales inferiores a 0 se tratan como 0 
+        en <b>substring()</b>.</p>
+    <img src="img/008strm.png" alt="">
+    <p>Si omite el segundo parámetro, <b>substring()</b> cortará el resto de la cadena.</p>
+
+    <h2><b>Substr</b> de cadena de JavaScript ()</h2>
+    <p><b>substr()</b> es similar a <b>slice()</b> .</p>
+    <p>La diferencia es que el segundo parámetro especifica la longitud de la parte extraída.</p>
+    <img src="img/009strm.png" alt="">
+    <p>Si omite el segundo parámetro, <b>substr()</b> cortará el resto de la cadena.</p>
+    <img src="img/010strm.png" alt="">
+    <p>Si el primer parámetro es negativo, la posición cuenta desde el final de la cadena.</p>
+    <img src="img/011strm.png" alt=""> <br>
+    <img src="img/012strm.png" alt="">
+
+    <h2>Sustitución del contenido de la cadena</h2>
+    <p>El método <b>replace()</b> reemplaza un valor especificado con otro valor en una cadena:</p>
+    <img src="img/013strm.png" alt="">
+    <div class="resaltar">
+        <p>El metodo <b>replace()</b>  no cambia la cadena a la que se llama.</p>
+        <p>El metodo <b>replace()</b> devuelve una nueva cadena.</p>
+        <p>El metodo <b>replace()</b> reemplaza solo la primera coincidencia.</p>
+        <p>Si desea reemplazar todas las coincidencias, use una expresión regular con el indicador /g 
+            establecido. Vea los ejemplos a continuación.</p>
+    </div>
+    <p>De forma predeterminada, el método <b>replace()</b> reemplaza solo la primera coincidencia:</p>
+    <img src="img/014strm.png" alt="">
+    <p>De forma predeterminada, el método <b>replace()</b> distingue entre mayúsculas y minúsculas. 
+        Escribir MICROSOFT (con mayúsculas) no funcionará:</p>
+    <p>Para reemplazar mayúsculas y minúsculas, use una expresión regular con una <b>/i </b>  
+        ( <b>i</b>nsensible):</p>
+    <img src="img/018strm.png" alt="">
+    <p>Nota: Las expresiones regulares se escriben sin comillas.</p>
+    <p>Para reemplazar todas las coincidencias, use una expresión regular con una <b>/g </b> (coincidencia  <b>g</b>lobal):</p>
+    <img src="img/019strm.png" alt="">
+    <div class="resaltar">
+        <p>Aprenderá mucho más sobre las expresiones regulares en el capítulo: <a href="https://www.w3schools.com/js/js_regexp.asp" 
+            target="_blank" rel="noopener noreferrer">Expresiones regulares de JavaScript</a>.</p>
+    </div>
+
+    <h2>Conversión a mayúsculas y minúsculas</h2>
+    <p>Una cadena se convierte a mayúsculas con <b>toUpperCase()</b>:</p>
+    <img src="img/020strm.png" alt="">
+    <p>Una cadena se convierte a minúsculas con <b>toLowerCase()</b>:</p>
+    <img src="img/021strm.png" alt="">
+
+    <h2>Cadena JavaScript toLowerCase()</h2>
+    <img src="img/022strm.png" alt="">
+
+    <h2>JavaScript Cadena concatenación ()</h2>
+    <p><b>concat()</b> une dos o más cadenas:</p>
+    <img src="img/023strm.png" alt="">
+    <p>El método <b>concat()</b> se puede utilizar en lugar del operador más. 
+        Estas dos líneas hacen lo mismo:</p>
+    <img src="img/024strm.png" alt="">
+    <div class="resaltar">
+        <p>Todos los métodos de cadena devuelven una nueva cadena. No modifican la cadena original.</p>
+        <p>Las cadenas son inmutables: las cadenas no se pueden cambiar, solo reemplazar.</p>
+    </div>
+
+    <h2>Recorte de cadena de JavaScript ()</h2>
+    <p>El método <b>trim()</b> elimina los espacios en blanco de ambos lados de una cadena:</p>
+    <img src="img/025astrm.png" alt="">
+
+    <h2>Relleno de cadena de JavaScript</h2>
+    <p>ECMAScript 2017 agregó dos métodos de cadena: <b>padStart()</b> y <b>padEnd()</b> para admitir el relleno al 
+        principio y al final de una cadena.</p>
+
+    <h2>JavaScript String <b>padStart()</b></h2>
+    <p>El método <b>padStart()</b> rellena una cadena con otra cadena:</p>
+    <img src="img/025strm.png" alt="">
+    <div class="resaltar">
+        <p>El método <b>padStart()</b> es un método de cadena.</p>
+        <p>Para rellenar un número, primero convierta el número en una cadena.</p>
+        <p>Vea el ejemplo a continuación:</p>
+        <img src="img/027strm.png" alt="">
+    </div>
+    <p><b>padStart()</b> es una característica de ECMAScript 2017.</p>
+    <p><b>padStart()</b> no es compatible con Internet Explorer.</p>
+
+    <h2>JavaScript Cadena <b>padEnd()</b> </h2>
+    <p>El método <b>padEnd()</b> rellena una cadena con otra cadena:</p>
+    <img src="img/028strm.png" alt=""> <br>
+    <img src="img/029strm.png" alt=""> <br>
+    <img src="img/030strm.png" alt=""> <br>
+    <img src="img/031strm.png" alt=""> <br>
+    <div class="resaltar">
+        <p>El método <b>padEnd()</b> es un método de cadena.</p>
+        <p>Para rellenar un número, primero convierta el número en una cadena.</p>
+        <p>Vea el ejemplo a continuación.</p>
+        <img src="img/032strm.png" alt=""> <br>
+        <img src="img/033strm.png" alt=""> <br>
+    </div>
+
+    <h2>Extracción de caracteres de cadena</h2>
+    <p>Hay 3 métodos para extraer caracteres de cadena:</p>
+    <ul>
+        <li><b>charAt(position)</b> </li>
+        <li><b>charCodeAt(position)</b> </li>
+        <li>Acceso a la propiedad [ ]</li>
+    </ul>
+
+    <h2>Cadena JavaScript charAt()</h2>
+    <p>El método <b>charAt()</b> devuelve el carácter en un índice especificado (posición) en una cadena:</p>
+    <img src="img/034strm.png" alt="">
+    <img src="img/035strm.png" alt="">
+
+    <h2>Cadena JavaScript charCodeAt()</h2>
+    <p>El método <b>charCodeAt()</b> devuelve el Unicode del carácter en un índice especificado en una cadena:</p>
+    <p>El método devuelve <b>charCodeAt()</b> un código UTF-16 (un número entero entre 0 y 65535).</p>
+    <img src="img/036strm.png" alt="">
+    <img src="img/037strm.png" alt="">
+
+    <h2>Acceso a la propiedad</h2>
+    <p>ECMAScript 5 (2009) permite el acceso a la propiedad <b>[ ]</b> en cadenas:</p>
+    <img src="img/038strm.png" alt="">
+    <div class="resaltar">
+        <p>El acceso a la propiedad puede ser un poco impredecible:</p>
+        <ul>
+            <li>Hace que las cadenas parezcan matrices (pero no lo son)</li>
+            <li>Si no se encuentra ningún carácter,<b> [ ] </b> devuelve indefinido, mientras que  <b>charAt()</b>
+                devuelve una cadena vacía.</li>
+            <li>Es de solo lectura. <b>str[0] = "A"</b> no da ningún error (¡pero no funciona!)</li>   
+        </ul>
+    <img src="img/039strm.png" alt="">    
+    </div>
+
+    <h2>Convertir una cadena en una matriz</h2>
+    <p>Si desea trabajar con una cadena como una matriz, puede convertirla en una matriz.</p>
+
+    <h2>División de cadena de JavaScript ()</h2>
+    <p>Una cadena se puede convertir en una matriz con el método <b>split()</b>:</p>
+    <img src="img/040strm.png" alt=""> <br>
+    <img src="img/041strm.png" alt=""> 
+    <p>Si se omite el separador, la matriz devuelta contendrá la cadena completa en el índice [0].</p>
+    <p>Si el separador es  <b>""</b>, la matriz devuelta será de caracteres individuales:</p>
+    <img src="img/042strm.png" alt=""> <br>
+    <img src="img/043strm.png" alt="">
+    <div class="resaltar">
+        <h3>Referencia de cadena completa</h3>
+        <p>Para obtener una referencia completa de String, vaya a la web:</p>
+        <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">Referencia completa
+             de cadenas de JavaScript .</a>
+        <p>La referencia contiene descripciones y ejemplos de todas las propiedades y métodos de cadenas (29).</p>
+    </div>
+
+ 
+   
+
+
+
+
+
+
+    
+
+
+
+</body>
+</html>

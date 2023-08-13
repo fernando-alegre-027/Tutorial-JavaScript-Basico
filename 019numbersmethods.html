@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+    <h1>019 Numbers Methods</h1>
+    <p>Los métodos numéricos ayudan a trabajar con números.</p>
+
+    <h2>Métodos numéricos y propiedades</h2>
+    <p>Los valores primitivos (como 3.14 o 2014), no pueden tener propiedades 
+        y métodos (porque no son objetos).</p>
+    <p>Pero con JavaScript, los métodos y propiedades también están disponibles 
+        para valores primitivos, porque JavaScript trata los valores primitivos 
+        como objetos cuando ejecuta métodos y propiedades.</p>
+    <h2>El método <b>toString()</b></h2>
+    <p>El método <b>toString()</b> devuelve un número como una cadena.</p>
+    <p>Todos los métodos numéricos se pueden usar en cualquier tipo de números 
+        (literales, variables o expresiones):</p>
+    <img src="img/001numm.png" alt="code"><br>
+    <img src="img/002numm.png" alt="code">
+
+    <h2>El método <b>toExponential()</b> </h2>
+    <p></p><b>toExponential()</b> devuelve una cadena, con un número redondeado y 
+       escrito en notación exponencial.</p>
+    <p>Un parámetro define el número de caracteres detrás del punto decimal:</p>
+    <img src="img/003numm.png" alt="code">
+    <p>El parámetro es opcional. Si no lo especifica, JavaScript no redondeará 
+        el número.</p>
+
+    <h2>El método <b>toFixed()</b></h2>
+    <p><b>toFixed()</b> devuelve una cadena, con el número escrito con un número 
+        específico de decimales:</p>
+    <img src="img/004numm.png" alt="code">
+    <p><b>toFixed()</b> es perfecto para trabajar con dinero.</p>
+
+
+    <h2>El método <b>toPrecision()</b></h2>
+    <p><b>toPrecision()</b>devuelve una cadena, con un número escrito con una longitud 
+        especificada:</p>
+        <img src="img/005numm.png" alt="code">
+
+    <h2>El método <b>valueOf()</b></h2>
+    <p><b>valueOf()</b> devuelve un número.</p>
+    <img src="img/006numm.png" alt="code">
+    <p>En JavaScript, un número puede ser un valor primitivo (<b>typeof</b> = número) 
+        o un objeto (<b>typeof</b>  = objeto).</p>
+    <p>El método <b>valueOf()</b> se usa internamente en JavaScript para convertir 
+        objetos numéricos en valores primitivos.</p>
+    <p>No hay ninguna razón para usarlo en su código.(????)</p>
+    <p>Todos los tipos de datos de JavaScript tienen  un método <b>valueOf()</b> y 
+        un<b> toString().</b></p>
+
+    <h2>Conversión de variables a números</h2>
+    <p>Hay 3 métodos de JavaScript que se pueden usar para convertir variables en 
+        números:</p>
+    <ul>
+        <li>el metodo <b>Number()</b></li>
+        <li>el metodo <b>parseInt()</b></li>
+        <li>el metodo <b>parseFloat()</b></li>
+    </ul>
+    <p>Estos métodos no son métodos numéricos , sino métodos globales de 
+        JavaScript.</p>
+
+    <h2>Métodos globales de JavaScript</h2>
+    <p>Los métodos globales de JavaScript se pueden usar en todos los 
+        tipos de datos de JavaScript.</p>
+    <p>Estos son los métodos más relevantes cuando se trabaja con números:</p>
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <tr>
+                <td><b>Number()	</b></td>
+                <td>Devuelve un número, convertido a partir de su argumento.</td>
+            </tr>
+            <tr>
+                <td><b>parseFloat()</b></td>
+                <td>Analiza su argumento y devuelve un número de punto flotante.</td>
+            </tr>
+            <tr>
+                <td><b>parseInt()</b></td>
+                <td>Analiza su argumento y devuelve un entero.</td>
+            </tr>
+        </tr>
+    </table>
+
+    <h2>El método <b>Number()</b> </h2>
+    <p><b>Number()</b> se puede utilizar para convertir variables de JavaScript 
+        en números:</p>
+    <img src="img/007numm.png" alt="code">
+    <p>Si el número no se puede convertir, devuelve <b> NaN</b> (No es un número).</p>
+    <h3>El método <b>Number()</b> utilizado en las fechas</h3>
+    <p>también puede convertir una fecha en un número.</p>
+    <img src="img/008numm.png" alt="code">
+    <p>El Number()método devuelve el número de milisegundos desde el 1.1.1970.</p>
+    <p>El número de milisegundos entre 1970-01-02 y 1970-01-01 es 86400000:</p>
+    <img src="img/009numm.png" alt="code">
+
+    <h2>El método <b>parseFloat()</b></h2>
+    <p><b>parseFloat()</b> analiza una cadena y devuelve un número entero. Se permiten espacios. 
+        Solo se devuelve el primer número:</p>
+    <img src="img/010numm.png" alt="code">
+    <p>Si el número no se puede convertir, devuelve <b> NaN</b> (No es un número).</p>
+    <h3>Propiedades de número</h3>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <tr>
+                <td><b>MAX_VALUE</b></td>
+                <td>Devuelve el mayor número posible en JavaScript.</td>
+            </tr>
+            <tr>
+                <td><b>MIN_VALUE</b></td>
+                <td>Devuelve el número más pequeño posible en JavaScript.</td>
+            </tr>
+            <tr>
+                <td><b>POSITIVE_INFINITY	()</b></td>
+                <td>Representa infinito (devuelto en desbordamiento).</td>
+            </tr>
+            <tr>
+                <td><b>NEGATIVE_INFINITY</b></td>
+                <td>Representa infinito negativo (devuelto en desbordamiento).</td>
+            </tr>
+            <tr>
+                <td><b>NaN</b></td>
+                <td>Representa un valor "No es un número".</td>
+            </tr>
+        </tr>
+    </table>
+
+    <h2>MIN_VALUE y MAX_VALUE</h2>
+    <p><b>MAX_VALUE</b> devuelve el mayor número posible en JavaScript.</p>
+    <img src="img/011numm.png" alt="code">
+    <p><b>MIN_VALUE</b> devuelve el número más bajo posible en JavaScript.</p>
+    <img src="img/012numm.png" alt="code">
+   
+
+    <h2>POSITIVE_INFINITY</h2>
+    <p><b>POSITIVE_INFINITY</b> devuelve en desbordamiento (Infinite):</p>
+    <img src="img/013numm.png" alt="code">
+    <h2>NEGATIVE_INFINITY</h2>
+    <p><b>NEGATIVE_INFINITY</b>  devuelve en desbordamiento (-Infinite):</p>
+    <img src="img/014numm.png" alt="code">
+
+    <h2><b>>NaN</b> - No es un número (v.T18)</h2>
+    <p><b>NaN</b> es una palabra reservada de JavaScript que indica que un número 
+        no es un número legal.</p>
+    <p>Intentar hacer aritmética con una cadena no numérica dará como resultado
+        <b>NaN</b> (No es un número):</p>
+    <img src="img/017num.png" alt="code">
+    <p>Sin embargo, si la cadena contiene un valor numérico, el resultado será 
+        un número:</p>
+    <img src="img/018num.png" alt="code">
+    <p>Puede usar la función global de JavaScript <b>isNaN()</b> para averiguar 
+        si un valor no es un número:</p>
+    <img src="img/019num.png" alt="code">
+    <img src="img/020num.png" alt="code">
+    <p><b>Cuidado!</b>: Si utiliza <b>NaN</b> en una operación matemática, 
+        el resultado también será <b>NaN</b> :</p>
+    <img src="img/021num.png" alt="code">
+    <p>O el resultado podría ser una concatenación como NaN5:</p>
+    <img src="img/022num.png" alt="code">
+    <p>Para <b>typeof</b> : <b>NaN</b> es un numero:</p>
+    <img src="img/023num.png" alt="code">
+
+    <h2>Las propiedades numéricas no se pueden usar en variables</h2>
+    <p>Las propiedades numéricas pertenecen al contenedor de objetos numéricos 
+        de JavaScript llamado Number .</p>
+    <p>Solo se puede acceder a estas propiedades como <b>Number.MAX_VALUE</b>.</p>
+    <p>Usando myNumber .MAX_VALUE, donde myNumber es una variable, expresión o valor, 
+        devolverá <b>undefined</b>:</p>
+    <img src="img/014numm.png" alt="code">
+    <div class="resaltar">
+        <h3>Referencia completa de números de JavaScript</h3>
+        <p>Para obtener una referencia de número completa, visite:</p>
+        <a href="https://www.w3schools.com/jsref/jsref_obj_number.asp" target="_blank" rel="noopener noreferrer">
+            Referencia completa de números de JavaScript .</a>
+        <p>La referencia contiene descripciones y ejemplos de todas las propiedades y métodos de Number.</p>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

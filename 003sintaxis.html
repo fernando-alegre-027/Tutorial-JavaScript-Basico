@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+
+
+
+
+
+    <h1>003 Sintaxis JavaScript</h1>
+    <p>La sintaxis de JavaScript es el conjunto de reglas, 
+        que construyen los programas de JavaScript.</p>
+        <img src="img/001sint.png" alt="">
+    <ul>
+        <li>Valores:
+                <ul>
+                    <li> <b>Literales</b>: (Los valores fijos se 
+                        llaman Literales.) (Numeros-Cadenas)</li>
+                    <p>Las dos reglas de sintaxis más importantes 
+                        para valores fijos son:  <br>
+                        1. Los números se escriben con o sin decimales<br> 
+                        2.  Las cadenas son texto, escrito entre comillas simples o dobles</p>
+                        <!-- <script>
+                            alert(3);
+                            alert(3.789);
+                            alert('Hola');//Cadena entre comillas simples o dobles
+                        </script> -->
+                    <li><b>Variables</b>:</li>
+                     
+                        <p>En un lenguaje de programación, las variables se utilizan 
+                        para almacenar valores de datos.</p>
+                        <p> JavaScript usa las palabras clave <b>var , let y const </b> 
+                        para declarar variables .</p>
+                        <p>  Se utiliza un signo igual para asignar valores a las variables.</p>
+                        <p> En este ejemplo, x se define como una variable. Entonces, a 
+                            <b>x</b> se le asigna  el valor (dado) 6:</p>
+
+                        
+
+                        <!-- <script>
+                           var a = 33; 
+                           alert(a);
+                        </script> -->
+                </ul>
+           
+        </li>
+        <img src="img/002sint.png" alt="code">
+        <li>Operadores:</li>
+        <p>JavaScript usa operadores aritméticos ( <b> + - * /</b> ) para calcular valores:</p>
+        <img src="img/003sint.png" alt="code">
+        <p>JavaScript usa un operador de asignación ( <b>=</b> ) para asignar valores a las variables:</p>
+        <img src="img/004sint.png" alt="code">
+            <!-- <script>
+                var b = 7;
+                var c = b+a;
+                alert(c)
+            </script> -->
+        <br>
+        <li>Expresiones:</li>
+        <p> Una expresión es una combinación de valores, variables y operadores, 
+            que calcula un valor.</p>
+        <p>Una expresión es una combinación de valores, variables y operadores, 
+            que calcula un valor.</p>
+        <p> El cálculo se llama evaluación. Por ejemplo: 5 * 10 se evalúa como 50</p>
+        <p>Las expresiones también pueden contener valores de variables:</p>
+        <img src="img/005sint.png" alt="code">
+        <p>Los valores pueden ser de varios tipos, como números y cadenas.
+            Por ejemplo, "John" + " " + "Doe", se evalúa como "John Doe":</p>
+        <img src="img/006sint.png" alt="code">
+    </ul> 
+            <!-- <script>
+               alert('hola'+3) 
+            </script> -->
+        <h2>Palabras clave de JavaScript</h2>
+        <p>Las palabras clave de JavaScript se utilizan para identificar las 
+            acciones a realizar.</p>
+        <p>La palabra clave <b>let</b> le dice al navegador que cree variables:</p>
+        <img src="img/007sint.png" alt="code">
+        <p>La palabra clave <b>var</b> también le dice al navegador que cree variables:</p>
+        <img src="img/008sint.png" alt="code">
+        <p>En estos ejemplos, usar <b>var</b> o <b>let</b> producirá el 
+            mismo resultado.</p>
+  
+        <h2>Comentarios JavaScript</h2>
+        <p>No todas las declaraciones de JavaScript se "ejecutan".</p>
+        <p>El código después de barras oblicuas dobles // o entre  /* y  
+            */se trata como un comentario .</p>
+        <p>Los comentarios se ignoran y no se ejecutarán:</p>
+        <img src="img/009sint.png" alt="code">
+
+        <h2>Identificadores /Nombres de JavaScript</h2>
+        <p>Los identificadores son nombres JavaScript.</p>
+        <p>Los identificadores se utilizan para nombrar variables y palabras 
+            clave y funciones.</p>
+        <p>Las reglas para los nombres legales son las mismas en la mayoría 
+            de los lenguajes de programación.</p>
+        <p>Un nombre de JavaScript debe comenzar con:</p>
+        <ul>
+            <li>Una letra (AZ o az)</li>
+            <li>Un signo de dólar ($)</li>
+            <li>O un guión bajo (_)</li>
+            <p>Los caracteres subsiguientes pueden ser letras, 
+                dígitos, guiones bajos o signos de dólar.</p>
+        </ul>
+
+        <div class="resaltar">
+            <h4>Nota</h4>
+            <p>No se permiten números como primer carácter en los nombres.</p>
+            <p>De esta forma, JavaScript puede distinguir fácilmente los 
+                identificadores de los números.</p>
+        </div>
+
+        <h2>JavaScript distingue entre mayúsculas y minúsculas</h2>
+        <p>Todos los identificadores de JavaScript distinguen entre mayúsculas y minúsculas . </p>
+        <p>Las variables <b>lastName</b> y <b>lastname</b> , son dos variables diferentes:</p>
+        <p></p>
+        <img src="img/010sint.png" alt="code">
+        <p>JavaScript no interpreta LET o Let como la palabra clave let .</p>
+
+        <h2>JavaScript y Camel Case</h2>
+        <p>Históricamente, los programadores han utilizado diferentes formas de unir varias 
+            palabras en un nombre de variable:</p>
+        <p>Con guiones:first-name, last-name, master-card, inter-city. <b>(Error)</b></p>
+        <div class="resaltar">
+            <p>Los guiones <b>NO</b> están permitidos en JavaScript. Están <b>reservados</b> 
+                para las <b>restas</b>.</p>
+            <p>Utilizar los siguientes metodos <b>permitidos</b>:</p>
+            <ul>
+                <li>Guion bajo:<br> first_name, last_name, master_card, inter_city.</li>
+                
+                <li>Caja Camel Superior (Caso Pascal): <br>FirstName, LastName, MasterCard, InterCity.</li>
+
+                <li>Caja de camello inferior: Los programadores de JavaScript tienden a usar mayúsculas y 
+                    minúsculas que comienzan con una letra minúscula:<br>firstName, lastName, masterCard, interCity.
+                </li>
+            </ul>
+            
+            
+        </div> 
+   
+        <h2>Identificadores:</h2>
+        <ul>
+            <li>Comienzo: letra, $, _ </li>
+            <li>Seguir: letra, $, _, num</li>
+            <li>Dos Palabras: primeraSegunda</li>
+        </ul>
+
+    </ul>
+    <p>Video del Tema</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wv550aueIPQ" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe> <br>
+    <a href="03_sintaxis.html" target="_blank">Practica del Tema</a> <br>
+    <a href="https://gitlab.com/didacticode/javascript/-/snippets/1952467/raw/master/03_sintaxis.html" target="_blank">Codigo de Practica</a> <br>
+                
+</body>
+</html>

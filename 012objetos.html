@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+    <h1>012 Objetos</h1>
+    <h2>Objetos, propiedades y métodos de la vida real</h2>
+    <p>En la vida real, un automóvil es un objeto .</p>
+    <img src="img/002obj.png" alt="">
+    <p>Un automóvil tiene propiedades como peso y color, y métodos como iniciar
+        y detener:</p>
+    <p>Todos los autos tienen las mismas propiedades , pero los valores de las
+        propiedades difieren de un auto a otro.</p>
+    <p>Todos los autos tienen los mismos métodos , pero los métodos se realizan
+        en momentos diferentes .</p>
+    <p>Los objetos también son variables. Pero los objetos pueden contener
+        muchos valores.</p>
+    <p>Este código asigna muchos valores (Lamborghini, 500, blanco) a una variable
+        denominada automóvil:</p>
+    <img src="img/004obj.png" alt="">
+    <p>Los valores se escriben como pares nombre:valor (nombre y valor
+        separados por dos puntos).</p>
+    <div class="resaltar">
+        <p>Es una práctica común declarar objetos con la palabra clave <b>const</b> .</p>
+        <p>Obtenga más información sobre el uso de <b>const</b> con objetos en el capítulo:
+            JS Const .</p>
+    </div>
+    <h2>Definición de objeto</h2>
+    <p>Usted define (y crea) un objeto JavaScript con un objeto literal:</p>
+    <img src="img/005obj.png" alt="">
+    <img src="" alt="">
+    <p>Los espacios y los saltos de línea no son importantes. Una definición de objeto
+        puede abarcar varias líneas:</p>
+    <img src="img/006obj.png" alt="">
+    <h2>Propiedades del objeto</h2>
+    <p>Los pares nombre:valores en los objetos de JavaScript se denominan propiedades : </p>
+    <img src="img/007obj.png" alt="">
+    <h2>Acceso a las propiedades del objeto</h2>
+    <p>Puede acceder a las propiedades de los objetos de dos maneras:</p>
+    <img src="img/008obj.png" alt=""> <br>
+    <img src="img/009obj.png" alt=""> <br>
+    <img src="img/010obj.png" alt="">
+    <div class="resaltar">
+        <p>Los objetos de JavaScript son contenedores con nombres de valores llamados
+            propiedades.</p>
+    </div>
+    <h2>Métodos de objetos</h2>
+    <p>Los objetos también pueden tener métodos .</p>
+    <p>Los métodos son acciones que se pueden realizar sobre los objetos.</p>
+    <p>Los métodos se almacenan en propiedades como definiciones de función .</p>
+    <img src="img/011obj.png" alt="">
+    <p>(function() {return this.firstName + " " + this.lastName;})</p>
+    <div class="resaltar">
+        <p>Un método es una función almacenada como una propiedad.</p>
+    </div>
+    <p>Ejemplo:</p>
+    <img src="img/012obj.png" alt="">
+    <p>En el ejemplo anterior, <b>this</b> se refiere al objeto person .</p>
+    <p><b>this</b>.firstName significa la propiedad firstName de <b>this</b> .</p>
+    <p><b>this</b>.firstName significa la propiedad firstName de person .</p>
+    <h2>¿Qué es esto ?</h2>
+    <p>En JavaScript, la palabra clave <b>this</b> se refiere a un objeto .</p>
+    <p>El objeto depende de cómo se invoque <b>this</b> (usado o llamado).</p>
+    <p>La palabra clave <b>this</b> se refiere a diferentes objetos dependiendo de cómo
+        se use:</p>
+    <img src="img/014obj.png" alt="">
+    <p><b>this</b> no es una variable Es una palabra clave. No puede cambiar el valor
+        de<b>this</b>.</p>
+    <h2>La palabre clave <b>this</b></h2>
+    <p>En una definición de función, thisse refiere al "propietario" de la función.</p>
+    <p>En el ejemplo anterior, this es el objeto persona el que "posee" la fullNamefunción.</p>
+    <p>En otras palabras, this.firstNamesignifica la firstNamepropiedad de este objeto .</p>
+    <p>Obtenga más información sobre JavaScript this en este
+    <a href="https://www.w3schools.com/js/js_this.asp" target="_blank" rel="noopener noreferrer">Tutorial</a>
+    <h2>Acceso a métodos de objetos</h2>
+    <p>Accede a un método de objeto con la siguiente sintaxis:</p>
+    <img src="img/015obj.png" alt="">
+    <p>Ejemplo</p>
+    <img src="img/016obj.png" alt="">
+    <p>Si accede a un método sin los paréntesis (), devolverá la definición de la función :</p>
+    <img src="img/017obj.png" alt="">
+    <h2>¡No declarar cadenas, números y booleanos como objetos!</h2>
+    <p>Cuando se declara una variable de JavaScript con la palabra clave " <b>new</b> ", la
+        variable se crea como un objeto:</p>
+    <img src="img/018obj.png" alt="">
+    <p>Evitar los objetos String, Number y Boolean .
+        Complican su código y ralentizan la velocidad de ejecución.</p>
+
+        
+
+</body>
+
+</html>

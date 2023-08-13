@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Contenido
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html">000 Inicio</a>
+                <a href="001donde.html">001 Donde</a>
+                <a href="002salida.html">002 Salida</a>
+                <a href="003sintaxis.html">003 Sintaxis</a>
+                <a href="004sentencias.html">004 Sentencias</a>
+                <a href="005comentarios.html">005 Comentarios</a>
+                <a href="006variables.html">006 Variables</a>
+                <a href="007let.html">007 Let</a>
+                <a href="008const.html">008 Const</a>
+                <a href="009operadores.html">009 Operadores</a>
+                <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+                <a href="011funciones.html">011 Funciones</a>
+                <a href="012objetos.html">012 Objetos</a>
+                <a href="013eventos.html">013 Eventos</a>
+                <a href="014strings.html">014 Strings</a>
+                <a href="015stringsmethods.html">015 Str.Methods</a>
+                <a href="016stringsearch.html">016 Str.Search</a>
+                <a href="017stringtemplates.html">017 Str.Templates</a>
+                <a href="018numbers.html">018 Numbers</a>
+                <a href="019numbersmethods.html">019 Numb. Meth.</a>
+                <a href="020arrays.html">020 Arrays</a>
+                <a href="#">021 Arrays Meth.</a>
+
+            </div>
+        </div>
+    </div>
+
+    <body>
+        <h1>004 Sentencias en JavaScript</h1>
+
+
+        <h2>Programas JavaScript</h2>
+        <p>Un programa de computadora es una lista de "instrucciones"
+            para ser "ejecutadas" por una computadora.</p>
+        <p>En un lenguaje de programación, estas instrucciones de
+            programación se denominan sentencias</p>
+        <p>Un programa JavaScript es una lista de sentencias
+            de programación .</p>
+        <p>En HTML, los programas JavaScript son ejecutados por el navegador web.</p>
+        <img src="img/001sent.png" alt="code">
+
+        <h2>Declaraciones JavaScript</h2>
+        <p>Las declaraciones de JavaScript se componen de:</p>
+        <ul>
+            <li>Valores, operadores, expresiones, palabras clave y comentarios.</li>
+        </ul>
+        <p></p>
+        <img src="img/002sent.png" alt="code">
+        <p>Esta declaración le dice al navegador que escriba "Hola, Dolly". dentro
+            de un elemento HTML con id="demo":</p>
+        <p>La mayoría de los programas de JavaScript contienen muchas declaraciones
+            de JavaScript.</p>
+        <p>Las declaraciones se ejecutan, una por una, en el mismo orden en que
+            se escriben.</p>
+        <div class="resaltar">
+            <p>Los programas de JavaScript (y las declaraciones de JavaScript)
+                a menudo se denominan código de JavaScript.</p>
+        </div>
+
+
+
+        <h2>Punto y coma</h2>
+        <p>Los puntos y comas separan las declaraciones de JavaScript.</p>
+        <p>Agregue un punto y coma al final de cada instrucción ejecutable:</p>
+        <p>Es Recomendable despues de cada sentencia</p>
+        <img src="img/003sent.png" alt="code">
+        <p>Se pueden escribir varias sentencias en la misma linea separándolas
+            con punto y coma</p>
+        <img src="img/004sent.png" alt="code">
+        <div class="resaltar">
+            <p>En la web, es posible que vea ejemplos sin punto y coma.</p>
+            <p>No es obligatorio terminar las declaraciones con punto y coma,
+                pero es muy recomendable.</p>
+        </div>
+        <!-- <script>
+                var a = 1; var b = 2; var c = a+b;
+                alert(c)
+            </script> -->
+
+        <h2>Espacios en Blanco</h2>
+        <p>JavaScript ignora múltiples espacios.</p>
+        <p>Puede agregar espacios en blanco a su secuencia de comandos para
+            que sea más legible.</p>
+        <p>Las siguientes líneas son equivalentes:</p>
+        <img src="img/005sent.png" alt="code">
+        <p>Una buena práctica es poner espacios alrededor de los operadores
+            ( <b>= + - * / </b> ):</p>
+        <img src="img/006sent.png" alt="code">
+
+        <!-- <script>
+                var nombre ="Ada";
+                alert (nombre);
+            </script> -->
+        <h2>Longitud de línea de JavaScript y saltos de línea</h2>
+        <p>Para una mejor legibilidad, a los programadores a menudo les gusta evitar 
+            las líneas de código de más de 80 caracteres.</p>
+        <p>Si una declaración de JavaScript no cabe en una línea, el mejor lugar para 
+            dividirla es después de un operador:</p>
+        <img src="img/007sent.png" alt="code">
+        <!-- <script>
+                var apellido =
+                "Lovelace";
+                alert (apellido);
+            </script> -->
+        <h2>Bloques de código</h2>
+       <p>Las declaraciones de JavaScript se pueden agrupar en bloques de código, 
+        dentro de corchetes {...}.</p>
+       <p>El propósito de los bloques de código es definir declaraciones que se 
+        ejecutarán juntas.</p>
+       <p>Un lugar donde encontrará declaraciones agrupadas en bloques, es en 
+        funciones de JavaScript:</p>
+        <img src="img/008sent.png" alt="code">
+        <p>Se utilizan en funciones, bucles, condiciones, etc</p>
+        <!-- <script>
+                function hola(){
+                    alert ("Hola");
+                    alert ("caracola");
+                }
+                hola ();
+            </script> -->
+        
+        <h2>Palabras clave de JavaScript</h2>
+        <p>Las declaraciones de JavaScript a menudo comienzan con una palabra 
+            clave para identificar la acción de JavaScript que se va a realizar.</p>
+        <p>Nuestra Referencia de palabras reservadas enumera todas las palabras 
+            clave de JavaScript.</p>
+        <p>Aquí hay una lista de algunas de las palabras clave que aprenderá en este tutorial:</p>
+        <div class="resaltar">
+            <img src="img/009sent.png" alt="code">
+            <p>Las palabras clave de JavaScript son palabras reservadas. Las palabras reservadas 
+                no se pueden utilizar como nombres de variables.</p>
+        </div>
+      
+        
+        <h2>Palabras Reservadas (<b>Keywords</b>)</h2>
+        <ul>
+            <li><b>break</b></li>
+            <li><b>continue</b></li>
+            <li><b>switch</b></li>
+            <li><b>for</b></li>
+            <li><b>do...while</b></li>
+            <li><b>if...else</b></li>
+            <li><b>debugger</b></li>
+            <li><b>try...cach</b></li>
+            <li><b>var</b></li>
+            <li><b>function</b></li>
+            <li><b>return</b></li>
+        </ul>
+        
+        <p>Video del Curso</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NIXhGtaatvA" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+        <a href="04_sentencias.html" target="_blank">Practica del Tema</a> <br>
+        <a href="https://gitlab.com/didacticode/javascript/-/snippets/1952469/raw/master/04_sentencias.html"
+            target="_blank">Codigo Practica</a>
+
+
+    </body>
+
+</html>

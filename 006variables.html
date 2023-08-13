@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/000eye.ico" type="image/x-icon">
+    <title>000 Tutorial JavaScript</title>
+</head>
+
+<body>
+    <h1 class="titulo">Tutorial de JavaScript</h1>
+    <div class="navbar">
+        <!-- <a href="#home">Home</a>
+        <a href="#news">News</a> -->
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contenido
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">000 Inicio</a>
+            <a href="001donde.html">001 Donde</a>
+            <a href="002salida.html">002 Salida</a>
+            <a href="003sintaxis.html">003 Sintaxis</a>
+            <a href="004sentencias.html">004 Sentencias</a>
+            <a href="005comentarios.html">005 Comentarios</a>
+            <a href="006variables.html">006 Variables</a>
+            <a href="007let.html">007 Let</a>
+            <a href="008const.html">008 Const</a>
+            <a href="009operadores.html">009 Operadores</a>
+            <a href="010tiposdedatos.html">010 Tipos de Datos</a>
+            <a href="011funciones.html">011 Funciones</a>
+            <a href="012objetos.html">012 Objetos</a>
+            <a href="013eventos.html">013 Eventos</a>
+            <a href="014strings.html">014 Strings</a>
+            <a href="015stringsmethods.html">015 Str.Methods</a>
+            <a href="016stringsearch.html">016 Str.Search</a>
+            <a href="017stringtemplates.html">017 Str.Templates</a>
+            <a href="018numbers.html">018 Numbers</a>
+            <a href="019numbersmethods.html">019 Numb. Meth.</a>
+            <a href="020arrays.html">020 Arrays</a>
+            <a href="#">021 Arrays Meth.</a>
+           
+        </div>
+        </div> 
+      </div>
+
+    <h1>006 Variables</h1>
+    <p>Las variables son contenedores para almacenar datos (almacenar
+        valores de datos).</p>
+    <p>Existen 4 formas de declarar una variable de JavaScript:</p>
+    <ul>
+        <li>Usando <b>var</b></li>
+        <li>Usando <b>let</b></li>
+        <li>Usando <b>const</b></li>
+        <li>Sin Usar nada</li>
+    </ul>
+    <img src="img/001var.jpg" alt="">
+    <img src="img/002var.jpg" alt="">
+    <img src="img/003var.jpg" alt="">
+
+    <h2>¿Cuándo usar JavaScript var?</h2>
+    <p>Declare siempre las variables de JavaScript con <b>var</b>, <b>let</b> o <b>const</b>.</p>
+    <p>La palabra clave <b>var</b> se usa en todo el código JavaScript desde 1995 hasta 2015.</p>
+    <p>Las palabras clave <b>let</b> y <b>const</b> se agregaron a JavaScript en 2015.</p>
+    <p>Si desea que su código se ejecute en un navegador anterior, debe usar <b>var</b>.</p>
+    <h2>¿Cuándo usar JavaScript <b>const</b>?</h2>
+    <p>Si quieres una regla general: declara siempre las variables con <b>const</b>.</p>
+    <p>Si cree que el valor de la variable puede cambiar, use <b>let</b>.</p>
+    <p>En este ejemplo, price1, price2 y total, son variables:</p>
+    <img src="img/004var.jpg" alt="">
+    <p>Las dos variables price1 y price2 se declaran con la palabra clave <b>const</b>.</p>
+    <p>Estos son valores constantes y no se pueden cambiar.</p>
+    <p>La variable <b>total</b> se declara con la palabra clave <b>let</b>, y es un valor que se
+        puede cambiar.</p>
+    <h2>Identificadores JavaScript</h2>
+    <p>Todas las variables de JavaScript deben identificarse con nombres únicos . <br>
+        Estos nombres únicos se denominan identificadores . <br>
+        Los identificadores pueden ser nombres cortos
+        (como x e y) o nombres más descriptivos (edad, suma, volumen total). </p>
+    <p>Las reglas generales para construir nombres para variables (identificadores únicos) son:</p>
+    <ul>
+        <li>Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar.</li>
+        <li>Los nombres deben comenzar con una letra.</li>
+        <li>Los nombres también pueden comenzar con $ y _ (pero no lo usaremos en este tutorial)</li>
+        <li>Los nombres distinguen entre mayúsculas y minúsculas (y e Y son variables diferentes)</li>
+        <li>Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres</li>
+    </ul>
+    <h2>Operador de Asignación</h2>
+    <p>En JavaScript, el signo igual ( =) es un operador de "asignación", no un operador "igual a".
+        <br>El operador "igual a" se escribe como == en JavaScript.
+    </p>
+    <img src="img/005var.jpg" alt="">
+
+    <h2>Tipos de datos de JavaScript</h2>
+    <p>Las variables de JavaScript pueden contener números como 7 y valores de texto como "John Doe".</p>
+    <p>En programación, los valores de texto se denominan cadenas de texto.</p>
+    <p>JavaScript puede manejar muchos tipos de datos, pero por ahora, solo piense en números y cadenas.</p>
+    <p>Las cadenas se escriben entre comillas simples o dobles. Los números se escriben sin comillas.</p>
+    <p>Si pone un número entre comillas, se tratará como una cadena de texto.</p>
+    <img src="img/006var.jpg" alt="">
+
+    <h2>Declarar una variable de JavaScript</h2>
+    <p>Crear una variable en JavaScript se llama "declarar" una variable.</p>
+    <p>Declaras una variable de JavaScript con <b>var</b> o la palabra clave <b>let</b>:</p>
+    <p>Después de la declaración, la variable no tiene valor (técnicamente lo es <b>undefined</b> ).</p>
+    <p>Para asignar un valor a la variable, utilice el signo igual:</p>
+    <img src="007var.jpg" alt="">
+    <p>También puede asignar un valor a la variable cuando la declara:</p>
+    <img src="img/008var.jpg" alt="">
+    <p>En el siguiente ejemplo, creamos una variable llamada carName y le asignamos el valor "Volvo".
+        Luego, "damos salida" al valor dentro de un párrafo HTML con id="demo":</p>
+    <img src="img/009var.jpg" alt="">
+    <p>Nota: Es una buena práctica de programación declarar todas las variables al comienzo de un script.</p>
+    <img src="img/010var.jpg" alt="">
+    <p>Una declaración puede abarcar varias líneas:</p>
+    <img src="img/011var.jpg" alt="">
+    <h2>Una declaración, muchas variables</h2>
+    <p>Puede declarar muchas variables en una declaración.</p>
+    <p>Comience la declaración con <b>let </b> y separe las variables con comas :</p>
+    <img src="img/012var.jpg" alt="">
+    <p>Una declaración puede abarcar varias líneas:</p>
+    <img src="img/013var.jpg" alt="">
+    <h2>Valor = indefinido (Undefined)</h2>
+    <p>En los programas de computadora, las variables a menudo se declaran sin valor.
+        El valor puede ser algo que debe calcularse o algo que se proporcionará más adelante, como una entrada del
+        usuario.</p>
+    <img src="img/014var.jpg" alt="">
+    <h2>Redeclaración de variables de JavaScript</h2>
+    <p>Si vuelve a declarar una variable de JavaScript declarada con <b>var</b>, no perderá su valor.</p>
+    <img src="img/015var.jpg" alt="">
+
+    <h2>Aritmética JavaScript</h2>
+    <p>Al igual que con el álgebra, puedes hacer operaciones aritméticas con variables de JavaScript, usando operadores
+        como =y +:</p>
+    <img src="img/016var.jpg" alt="">
+    <p>También puede agregar cadenas, pero las cadenas se concatenarán:</p>
+    <img src="img/017var.jpg" alt="">
+    <p>Prueba también esto:</p>
+    <img src="img/018var.jpg" alt="">
+    <p>Nota: Si pone un número entre comillas, el resto de los números se tratarán como cadenas y se concatenarán.</p>
+
+    <h2>Signo de dólar JavaScript $</h2>
+    <p>Dado que JavaScript trata un signo de dólar como una letra, los identificadores que contienen $ son nombres de
+        variables válidos:</p>
+    <img src="img/019var.jpg" alt="">
+    <p>Usar el signo de dólar no es muy común en JavaScript, pero los programadores profesionales a menudo lo usan como
+        un alias
+        para la función principal en una biblioteca de JavaScript.</p>
+    <p>En la biblioteca JavaScript jQuery, por ejemplo, la función principal $ se usa para seleccionar elementos HTML.
+        En jQuery $("p"); significa: "seleccionar todos los elementos p".</p>
+    <h2>Guión bajo en JavaScript ( _ )</h2>
+    <p>Dado que JavaScript trata el guión bajo como una letra, los identificadores que contienen _ son nombres de
+        variables válidos:</p>
+    <img src="img/020var.jpg" alt="">
+    <p>Usar el guión bajo no es muy común en JavaScript, pero una convención entre los programadores profesionales es
+        usarlo como
+        un alias para las variables "privadas (ocultas)".</p>
+    <h3>Video del Tema</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jhTRCvVtKcM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe> <br>
+
+    <a href="06_variables.html" target="_blank" rel="noopener noreferrer">Practica del Tema</a> <br>
+    <a href="https://gitlab.com/didacticode/javascript/-/snippets/1952482/raw/master/06_variables.html" target="_blank" rel="noopener noreferrer">Codigo</a>
+
+</body>
+
+</html>
